@@ -6,8 +6,11 @@ const Card = (props)=> {
         <div className="card">
         <div className="card-body">
           <h5 className="card-title">{props.cardTitle}</h5>
-          <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
+          <p className="card-text">{props.cardText}</p>
+          <button className="btn btn-primary">Güncelle</button>
+          <div className="card-footer text-muted">
+             {props.updateTime}
+          </div>
         </div>
       </div>
     )
